@@ -1,6 +1,8 @@
 Awesome Nested Fields [![Gem Version](https://badge.fury.io/rb/awesome_nested_fields.png)](http://badge.fury.io/rb/awesome_nested_fields)
 =====================
 
+NOTE: This repository is a reupload of https://github.com/manzhikov/awesome_nested_fields, which has been removed, as of March 2023. It was a clone of the now-deprecated https://github.com/lailsonbm/awesome_nested_fields. It contains a commit [a0f13f9f3ad6be22313f008a238ca30a753492a2](https://github.com/martinbjeldbak/awesome_nested_fields/commit/a0f13f9f3ad6be22313f008a238ca30a753492a2) to this project that some projects may be relying on.
+
 In Rails, you can create forms that have fields from nested models. For example, if a person has many phone numbers, you can easily create a form that receives data from the person and from a fixed number of phones. However, when you want to allow the person to insert multiple, indefinite phones, you're in trouble: it's [much harder](http://railscasts.com/episodes/196-nested-model-form-part-1) [than it](http://railscasts.com/episodes/197-nested-model-form-part-2) [should be](http://stackoverflow.com/questions/1704142/unobtrusive-dynamic-form-fields-in-rails-with-jquery). Well, not anymore.
 
 
@@ -12,7 +14,7 @@ Installation
 1. Add the gem to your Gemfile and run `bundle install` to make sure the gem gets installed.
 
 ```ruby
-gem 'awesome_nested_fields'
+gem 'awesome_nested_fields', github: 'martinbjeldbak/awesome_nested_fields'
 ```
 
 2. Add this line to `app/assets/javascripts/application.js` (or where you prefer) so the javascript dependency is added to the asset pipeline. Be sure to include this line after jQuery and jQuery UJS Adapter.
@@ -29,7 +31,7 @@ gem 'awesome_nested_fields'
 1. Add the gem to your Gemfile and run `bundle install` to make sure the gem gets installed. Be sure to include it after `jquery-rails` so the javascript files are added in the correct order at the templates.
 
 ```ruby
-gem 'awesome_nested_fields'
+gem 'awesome_nested_fields', github: 'martinbjeldbak/awesome_nested_fields'
 ```
 
 2. Copy the javascript dependency to `public/javascripts` by using the generator.
